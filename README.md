@@ -123,3 +123,45 @@
 <script src="js_assets/script.js" defer></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | UrbanGear Pretoria - Get In Touch</title>
+<meta name="description" content="Contact UrbanGear in Pretoria, South Africa. Email info@urbangear.co.za, Phone 012 345 6789. Find us on the map.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="cs_assets/style.css"></head>
+<body>
+<nav class="navbar"><div class="logo">URBANGEAR</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="enquiries.html">Special Offers</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
+<div class="page-heading"><h1>Contact Us</h1><p>We would love to hear from you.</p></div>
+<section class="section contact-container">
+<div class="contact-card"><h2>Get In Touch</h2><p>Email: info@urbangear.co.za</p><p>Phone: 012 345 6789</p><p>Address: Pretoria, South Africa</p><div id="map" style="height:300px; margin-top:20px; border-radius:8px;"></div></div>
+<div class="contact-card">
+<h2>Send Us a Message</h2>
+<form id="contactForm" action="https://formspree.io/f/maykexample2" method="POST" novalidate>
+<label>Full Name *</label><input type="text" id="cName" name="cName" required minlength="3"><span class="error" id="cNameError"></span>
+<label>Email *</label><input type="email" id="cEmail" name="cEmail" required><span class="error" id="cEmailError"></span>
+<label>Message Type *</label><select id="msgType" name="msgType" required><option value="">Select</option><option value="general">General Enquiry</option><option value="support">Support</option><option value="feedback">Feedback</option><option value="business">Business Opportunity</option></select><span class="error" id="msgTypeError"></span>
+<label>Full Message *</label><textarea id="cMessage" name="cMessage" required minlength="15" rows="5"></textarea><span class="error" id="cMessageError"></span>
+<button type="submit" class="button">Send Email</button>
+<p id="contactFormMessage"></p>
+</form>
+</div>
+</section>
+<footer><p>&copy; 2026 UrbanGear</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js_assets/script.js" defer></script>
+</body>
+</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About UrbanGear | Our Mission & Story</title><meta name="description" content="Learn about UrbanGear's mission to make affordable sports lifestyle products accessible to young people in South Africa."><link rel="stylesheet" href="cs_assets/style.css"></head><body>
+<nav class="navbar"><div class="logo">URBANGEAR</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="About.html" class="active">About</a></li><li><a href="products.html">Products</a></li><li><a href="enquiries.html">Special Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-heading"><h1>About UrbanGear</h1><p>Sport meets modern urban lifestyle</p></div>
+<section class="section about-content fade-in">
+<div class="tabs"><button class="tab-btn active" data-tab="who">Who We Are</button><button class="tab-btn" data-tab="mission">Our Mission</button><button class="tab-btn" data-tab="why">Why Us</button></div>
+<div id="who" class="tab-content active"><h2>Who We Are</h2><p>UrbanGear is a sports and lifestyle brand focused on modern clothing, footwear, accessories. Our goal is to provide products that allow customers to feel comfortable, confident and stylish.</p></div>
+<div id="mission" class="tab-content"><h2>Our Mission</h2><p>To make sports and lifestyle products accessible to young people and communities across South Africa, with quality and modern design.</p></div>
+<div id="why" class="tab-content"><h2>Why Choose UrbanGear?</h2><ul class="about-list"><li>Modern designs</li><li>Affordable</li><li>Comfortable</li><li>Simple enquiries</li></ul></div>
+
+<h2 style="margin-top:40px;">FAQs</h2>
+<div class="accordion"><div class="accordion-item"><button class="accordion-header">What sizes do you offer? <span>+</span></button><div class="accordion-body"><p>We offer S to XXL for clothing and 6-11 for footwear.</p></div></div><div class="accordion-item"><button class="accordion-header">Do you deliver outside Pretoria? <span>+</span></button><div class="accordion-body"><p>Yes, we deliver nationwide via Courier Guy.</p></div></div><div class="accordion-item"><button class="accordion-header">What is your return policy? <span>+</span></button><div class="accordion-body"><p>30-day returns if unworn with tags.</p></div></div></div>
+</section><footer><p>&copy; 2026 UrbanGear</p></footer><script src="js_assets/script.js" defer></script></body></html>
