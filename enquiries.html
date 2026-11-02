@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Enquiry | Check Price & Availability - UrbanGear</title>
+<meta name="description" content="Enquire about UrbanGear products. Get instant feedback on cost, stock availability and delivery in Pretoria.">
+<link rel="stylesheet" href="cs_assets/style.css"></head>
+<body>
+<nav class="navbar"><div class="logo">URBANGEAR</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="enquiries.html" class="active">Special Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-heading"><h1>Product Enquiry</h1><p>Interested in one of our products? Send us an enquiry.</p></div>
+<section class="form-section fade-in">
+<form id="enquiryForm" action="https://formspree.io/f/maykexample" method="POST" novalidate>
+<label for="name">Full Name *</label><input type="text" id="name" name="name" required minlength="3" placeholder="John Doe">
+<span class="error" id="nameError"></span>
+<label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="john@example.com">
+<span class="error" id="emailError"></span>
+<label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required pattern="^0[0-9]{9}$" placeholder="0123456789">
+<span class="error" id="phoneError"></span>
+<label for="product">Product *</label><select id="product" name="product" required><option value="">-- Select Product --</option><option value="tshirt">Urban Sports T-Shirt - R399</option><option value="hoodie">UrbanGear Hoodie - R699</option><option value="runner">Urban Runner - R899</option><option value="trainers">Street Trainers - R799</option><option value="cap">Urban Cap - R199</option><option value="backpack">Urban Backpack - R499</option></select>
+<span class="error" id="productError"></span>
+<label for="quantity">Quantity</label><input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+<label for="message">Message *</label><textarea id="message" name="message" rows="6" required minlength="10" placeholder="Ask about size, availability..."></textarea>
+<span class="error" id="messageError"></span>
+<button type="submit" class="button">Submit Enquiry</button>
+<p id="formMessage" role="alert"></p>
+</form>
+</section>
+<footer><p>&copy; 2026 UrbanGear</p></footer>
+<script src="js_assets/script.js" defer></script>
+</body>
+</html>
