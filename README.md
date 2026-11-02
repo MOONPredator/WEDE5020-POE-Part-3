@@ -165,3 +165,119 @@
 <h2 style="margin-top:40px;">FAQs</h2>
 <div class="accordion"><div class="accordion-item"><button class="accordion-header">What sizes do you offer? <span>+</span></button><div class="accordion-body"><p>We offer S to XXL for clothing and 6-11 for footwear.</p></div></div><div class="accordion-item"><button class="accordion-header">Do you deliver outside Pretoria? <span>+</span></button><div class="accordion-body"><p>Yes, we deliver nationwide via Courier Guy.</p></div></div><div class="accordion-item"><button class="accordion-header">What is your return policy? <span>+</span></button><div class="accordion-body"><p>30-day returns if unworn with tags.</p></div></div></div>
 </section><footer><p>&copy; 2026 UrbanGear</p></footer><script src="js_assets/script.js" defer></script></body></html>
+/* UrbanGear - Part 3 Enhanced CSS */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;background:#FFFFFF;color:#111111;line-height:1.6;scroll-behavior:smooth;}
+.navbar{background:#111111;color:#FFF;display:flex;justify-content:space-between;align-items:center;padding:20px 8%;position:sticky;top:0;z-index:1000;transition:0.3s;}
+.logo{color:#F97316;font-size:24px;font-weight:bold;letter-spacing:2px;}
+.nav-links{list-style:none;display:flex;gap:25px;}
+.nav-links a{color:#FFF;text-decoration:none;font-weight:bold;transition:0.3s;}
+.nav-links a:hover,.nav-links a.active{color:#F97316;}
+.hero{min-height:500px;background:#111111;display:flex;justify-content:center;align-items:center;text-align:center;padding:40px;animation:fadeIn 1s ease-in;}
+.hero h1{color:#FFF;font-size:50px;margin-bottom:20px;}
+.hero p{color:#FFF;font-size:18px;margin-bottom:30px;}
+.button{display:inline-block;background:#F97316;color:#FFF;padding:12px 25px;text-decoration:none;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:0.3s transform, background;}
+.button:hover{background:#111111;transform:translateY(-3px);}
+.section{padding:60px 8%;}.section h2{text-align:center;font-size:32px;margin-bottom:20px;}
+.intro{text-align:center;max-width:700px;margin:0 auto 40px;}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+.feature-card{border:2px solid #111111;padding:30px;text-align:center;border-radius:8px;transition:0.3s;}.feature-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.1);}
+.feature-card h3{color:#F97316;margin-bottom:15px;}
+.offer{background:#F97316;color:#FFF;text-align:center;padding:60px 20px;}
+.page-heading{background:#111111;color:#FFF;text-align:center;padding:70px 20px;}
+.page-heading h1{font-size:40px;color:#F97316;margin-bottom:10px;}
+.search-sort{display:flex;gap:15px;justify-content:center;margin-bottom:30px;flex-wrap:wrap;}
+.search-sort input,.search-sort select{padding:12px;border:1px solid #111111;border-radius:5px;min-width:250px;}
+.categories{text-align:center;margin-bottom:40px;}.categories button{background:#111111;color:#FFF;border:none;padding:12px 20px;margin:5px;border-radius:5px;cursor:pointer;transition:0.3s;}.categories button:hover,.categories button.active-cat{background:#F97316;}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+.product-card{border:1px solid #111111;border-radius:8px;overflow:hidden;background:#FFF;transition:0.3s;cursor:pointer;}.product-card:hover{transform:scale(1.02);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+.product-image{height:220px;background:#111111;color:#F97316;display:flex;justify-content:center;align-items:center;font-weight:bold;font-size:20px;overflow:hidden;}.product-image img{width:100%;height:100%;object-fit:cover;}
+.product-info{padding:20px;}.product-info h4{color:#F97316;font-size:22px;margin:15px 0;}
+/* Modal */ .modal{display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.7);}.modal-content{background:#FFF;margin:10% auto;padding:30px;border-radius:8px;max-width:600px;position:relative;animation:slideIn 0.3s;}.close-modal,.close-lightbox{position:absolute;right:15px;top:10px;font-size:28px;cursor:pointer;}
+/* Lightbox */ .lightbox{display:none;position:fixed;z-index:3000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);text-align:center;padding-top:60px;}.lightbox img{max-width:90%;max-height:80%;border-radius:8px;}
+/* Accordion */ .accordion-item{border:1px solid #111111;margin-bottom:10px;border-radius:5px;}.accordion-header{width:100%;padding:15px;background:#FFF;border:none;text-align:left;font-weight:bold;cursor:pointer;display:flex;justify-content:space-between;}.accordion-body{display:none;padding:15px;background:#f9f9f9;}.accordion-body.active{display:block;}
+/* Tabs */ .tabs{display:flex;gap:10px;margin-bottom:20px;}.tab-btn{padding:10px 20px;border:1px solid #111111;background:#FFF;cursor:pointer;border-radius:5px;}.tab-btn.active{background:#F97316;color:#FFF;border-color:#F97316;}.tab-content{display:none;}.tab-content.active{display:block;}
+.form-section{max-width:700px;margin:0 auto;padding:60px 20px;}form{display:flex;flex-direction:column;}form label{font-weight:bold;margin-bottom:5px;margin-top:15px;}form input,form select,form textarea{padding:12px;border:1px solid #111111;border-radius:5px;font-family:Arial;font-size:16px;}form textarea{resize:vertical;margin-bottom:20px;}form .button{align-self:flex-start;}.error{color:#F97316;font-size:13px;margin-top:3px;}#formMessage,#contactFormMessage{margin-top:20px;font-weight:bold;}
+.contact-container{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:900px;margin:0 auto;}.contact-card{border:2px solid #111111;padding:30px;border-radius:8px;}
+footer{background:#111111;color:#FFF;text-align:center;padding:25px;margin-top:40px;}footer a{color:#F97316;}
+.fade-in{opacity:0;transform:translateY(20px);transition:0.6s;} .fade-in.visible{opacity:1;transform:translateY(0);}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes slideIn{from{transform:translateY(-50px)}to{transform:translateY(0)}}
+@media(max-width:768px){.navbar{flex-direction:column;gap:20px;}.nav-links{flex-direction:column;text-align:center;gap:10px;}.hero h1{font-size:35px;}.features,.products-grid,.contact-container{grid-template-columns:1fr;}.search-sort{flex-direction:column;}}
+// UrbanGear Part 3 - Enhanced Functionality
+const productsData = [
+ {id:'tshirt',name:'Urban Sports T-Shirt',category:'clothing',price:399,image:'t-shirt',desc:'Comfortable cotton sports t-shirt for daily urban wear.',stock:'In Stock - 15 left',imgUrl:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500'},
+ {id:'hoodie',name:'UrbanGear Hoodie',category:'clothing',price:699,image:'HOODIE',desc:'Warm fleece hoodie, modern street design.',stock:'In Stock - 8 left',imgUrl:'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500'},
+ {id:'runner',name:'Urban Runner',category:'footwear',price:899,image:'RUNNING SHOE',desc:'Lightweight running shoe for city and track.',stock:'Limited - 4 left',imgUrl:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500'},
+ {id:'trainers',name:'Street Trainers',category:'footwear',price:799,image:'TRAINERS',desc:'Durable street trainers with grip.',stock:'In Stock - 12 left',imgUrl:'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500'},
+ {id:'cap',name:'Urban Cap',category:'accessories',price:199,image:'CAP',desc:'Classic urban cap, adjustable.',stock:'In Stock - 20 left',imgUrl:'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500'},
+ {id:'backpack',name:'Urban Backpack',category:'accessories',price:499,image:'BACKPACK',desc:'Spacious backpack for gym and daily use.',stock:'In Stock - 10 left',imgUrl:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500'}
+];
+
+let currentFilter='all', currentSearch='', currentSort='default';
+function renderProducts(){
+ const grid=document.getElementById('productsGrid'); if(!grid) return;
+ let filtered=productsData.filter(p=>{
+   const matchCat=currentFilter==='all'||p.category===currentFilter;
+   const matchSearch=p.name.toLowerCase().includes(currentSearch.toLowerCase())||p.category.includes(currentSearch.toLowerCase());
+   return matchCat&&matchSearch;
+ });
+ if(currentSort==='price-low') filtered.sort((a,b)=>a.price-b.price);
+ if(currentSort==='price-high') filtered.sort((a,b)=>b.price-a.price);
+ if(currentSort==='name') filtered.sort((a,b)=>a.name.localeCompare(b.name));
+ grid.innerHTML=filtered.map(p=>`
+  <div class="product-card" data-category="${p.category}" data-id="${p.id}">
+   <div class="product-image" onclick="openLightbox('${p.imgUrl}','${p.name}')"><img src="${p.imgUrl}" alt="${p.name} - ${p.category} - UrbanGear Pretoria" loading="lazy"></div>
+   <div class="product-info" onclick="openModal('${p.id}')"><h3>${p.name}</h3><p>${p.desc.substring(0,40)}...</p><h4>R${p.price}</h4><button class="button">View Details</button></div>
+  </div>`).join('');
+}
+function filterProducts(cat){currentFilter=cat;document.querySelectorAll('.categories button').forEach(b=>b.classList.remove('active-cat'));event.target.classList.add('active-cat');renderProducts();}
+function searchProducts(val){currentSearch=val;renderProducts();}
+function sortProducts(val){currentSort=val;renderProducts();}
+
+// Modal
+function openModal(id){const p=productsData.find(x=>x.id===id);document.getElementById('modalBody').innerHTML=`<h2>${p.name}</h2><img src="${p.imgUrl}" alt="${p.name}" style="width:100%;border-radius:8px;margin:15px 0;"><p>${p.desc}</p><p><strong>Price:</strong> R${p.price}</p><p><strong>Availability:</strong> ${p.stock}</p><p><strong>Delivery:</strong> 2-3 days in Pretoria, 3-5 days nationwide.</p><a href="enquiries.html" class="button">Enquire Now</a>`;document.getElementById('productModal').style.display='block';}
+function closeModal(){document.getElementById('productModal').style.display='none';}
+// Lightbox
+function openLightbox(src,caption){document.getElementById('lightboxImg').src=src;document.getElementById('lightboxCaption').textContent=caption;document.getElementById('lightbox').style.display='block';}
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+
+document.addEventListener('DOMContentLoaded',()=>{
+ renderProducts();
+ const search=document.getElementById('searchInput'); if(search) search.addEventListener('input',e=>searchProducts(e.target.value));
+ const sort=document.getElementById('sortSelect'); if(sort) sort.addEventListener('change',e=>sortProducts(e.target.value));
+ document.querySelector('.close-modal')?.addEventListener('click',closeModal);
+ document.querySelector('.close-lightbox')?.addEventListener('click',closeLightbox);
+ window.addEventListener('click',e=>{if(e.target.id==='productModal')closeModal();if(e.target.id==='lightbox')closeLightbox();});
+ // Accordion
+ document.querySelectorAll('.accordion-header').forEach(btn=>{btn.addEventListener('click',()=>{const body=btn.nextElementSibling;const isActive=body.classList.contains('active');document.querySelectorAll('.accordion-body').forEach(b=>b.classList.remove('active'));if(!isActive)body.classList.add('active');})});
+ // Tabs
+ document.querySelectorAll('.tab-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.tab).classList.add('active');})});
+ // Fade-in animation
+ const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+ // Leaflet Map - Pretoria
+ if(document.getElementById('map')){const map=L.map('map').setView([-25.7479,28.2293],13);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);L.marker([-25.7479,28.2293]).addTo(map).bindPopup('UrbanGear HQ<br>Pretoria, South Africa').openPopup();}
+ // Enquiry Form Validation + AJAX
+ const enquiryForm=document.getElementById('enquiryForm'); if(enquiryForm){enquiryForm.addEventListener('submit',function(e){e.preventDefault();if(validateEnquiry()){const formData=new FormData(enquiryForm);const product=productsData.find(p=>p.id===document.getElementById('product').value);const qty=document.getElementById('quantity').value||1;const total=product?product.price*qty:'TBD';document.getElementById('formMessage').innerHTML=`Thank you ${sanitize(document.getElementById('name').value)}! Your enquiry for <strong>${product?product.name:'selected product'}</strong> (Qty: ${qty}) has been received.<br>Estimated Total: <strong>R${total}</strong><br>Availability: ${product?product.stock:'Checking'}<br>We will email you at ${sanitize(document.getElementById('email').value)} within 24 hours.`;document.getElementById('formMessage').style.color='#111111';enquiryForm.reset();setTimeout(()=>{console.log('AJAX Simulation: Sending data to server...',Object.fromEntries(formData));},500);}});}
+ // Contact Form Validation + Email compilation
+ const contactForm=document.getElementById('contactForm'); if(contactForm){contactForm.addEventListener('submit',function(e){e.preventDefault();if(validateContact()){const name=sanitize(document.getElementById('cName').value);const email=sanitize(document.getElementById('cEmail').value);const type=document.getElementById('msgType').value;const msg=sanitize(document.getElementById('cMessage').value);const compiledEmail=`To: info@urbangear.co.za\nSubject: ${type} from ${name}\nFrom: ${email}\nMessage: ${msg}`;document.getElementById('contactFormMessage').innerHTML=`Thank you! Your ${type} message has been compiled.<br><em style="white-space:pre-wrap;background:#f4f4f4;display:block;padding:10px;margin-top:10px;">${compiledEmail}</em><br><a href="mailto:info@urbangear.co.za?subject=${encodeURIComponent(type+' from '+name)}&body=${encodeURIComponent(msg+'\n\nFrom: '+email)}" class="button">Open Email Client to Send</a>`;contactForm.reset();}});}
+});
+
+function validateEnquiry(){
+ let valid=true; const name=document.getElementById('name'),email=document.getElementById('email'),phone=document.getElementById('phone'),product=document.getElementById('product'),message=document.getElementById('message');
+ document.querySelectorAll('#enquiryForm .error').forEach(e=>e.textContent='');
+ if(!name.value.trim()||name.value.length<3){document.getElementById('nameError').textContent='Name must be at least 3 characters.';valid=false;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){document.getElementById('emailError').textContent='Enter valid email.';valid=false;}
+ if(!/^0[0-9]{9}$/.test(phone.value)){document.getElementById('phoneError').textContent='Enter valid SA number 0XXXXXXXXX (10 digits).';valid=false;}
+ if(!product.value){document.getElementById('productError').textContent='Select a product.';valid=false;}
+ if(!message.value.trim()||message.value.length<10){document.getElementById('messageError').textContent='Message at least 10 chars.';valid=false;}
+ return valid;
+}
+function validateContact(){
+ let valid=true; document.querySelectorAll('#contactForm .error').forEach(e=>e.textContent='');
+ if(!document.getElementById('cName').value.trim()||document.getElementById('cName').value.length<3){document.getElementById('cNameError').textContent='Name required.';valid=false;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('cEmail').value)){document.getElementById('cEmailError').textContent='Valid email required.';valid=false;}
+ if(!document.getElementById('msgType').value){document.getElementById('msgTypeError').textContent='Select message type.';valid=false;}
+ if(!document.getElementById('cMessage').value.trim()||document.getElementById('cMessage').value.length<15){document.getElementById('cMessageError').textContent='Message at least 15 chars.';valid=false;}
+ return valid;
+}
+function sanitize(str){const div=document.createElement('div');div.textContent=str;return div.innerHTML;} // Security: prevent XSS
