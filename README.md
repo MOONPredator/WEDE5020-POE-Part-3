@@ -1,4 +1,4 @@
-#Index
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +54,41 @@
 </main>
 <footer><p>&copy; 2026 UrbanGear Sports & Lifestyle. All Rights Reserved. | <a href="sitemap.xml">Sitemap</a></p>
 <div class="social"><a href="#">Instagram</a> | <a href="#">Facebook</a></div></footer>
+<script src="js_assets/script.js" defer></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | UrbanGear Sports & Streetwear Collection</title>
+    <meta name="description" content="Explore UrbanGear products: sports t-shirts R399, hoodies R699, urban runners R899, caps, backpacks. Filter by category, search and sort.">
+    <meta name="keywords" content="buy sports t-shirt South Africa, UrbanGear hoodie price, running shoes Pretoria">
+    <link rel="stylesheet" href="cs_assets/style.css">
+</head>
+<body>
+<nav class="navbar"><div class="logo">URBANGEAR</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li><li><a href="products.html" class="active">Products</a></li><li><a href="enquiries.html">Special Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-heading"><h1>Our Products</h1><p>Explore our range of sports and lifestyle gear</p></div>
+<section class="section">
+    <div class="search-sort">
+        <input type="text" id="searchInput" placeholder="Search products (e.g. hoodie)..." aria-label="Search products">
+        <select id="sortSelect" aria-label="Sort products"><option value="default">Sort by</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="name">Name A-Z</option></select>
+    </div>
+    <div class="categories">
+        <button onclick="filterProducts('all')" class="active-cat">All</button>
+        <button onclick="filterProducts('clothing')">Clothing</button>
+        <button onclick="filterProducts('footwear')">Footwear</button>
+        <button onclick="filterProducts('accessories')">Accessories</button>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- MODAL -->
+<div id="productModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div id="modalBody"></div></div></div>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox"><span class="close-lightbox">&times;</span><img id="lightboxImg" src="" alt="Enlarged product view"><p id="lightboxCaption"></p></div>
+
+<footer><p>&copy; 2026 UrbanGear</p></footer>
 <script src="js_assets/script.js" defer></script>
 </body>
 </html>
