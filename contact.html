@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | UrbanGear Pretoria - Get In Touch</title>
+<meta name="description" content="Contact UrbanGear in Pretoria, South Africa. Email info@urbangear.co.za, Phone 012 345 6789. Find us on the map.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="cs_assets/style.css"></head>
+<body>
+<nav class="navbar"><div class="logo">URBANGEAR</div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="enquiries.html">Special Offers</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
+<div class="page-heading"><h1>Contact Us</h1><p>We would love to hear from you.</p></div>
+<section class="section contact-container">
+<div class="contact-card"><h2>Get In Touch</h2><p>Email: info@urbangear.co.za</p><p>Phone: 012 345 6789</p><p>Address: Pretoria, South Africa</p><div id="map" style="height:300px; margin-top:20px; border-radius:8px;"></div></div>
+<div class="contact-card">
+<h2>Send Us a Message</h2>
+<form id="contactForm" action="https://formspree.io/f/maykexample2" method="POST" novalidate>
+<label>Full Name *</label><input type="text" id="cName" name="cName" required minlength="3"><span class="error" id="cNameError"></span>
+<label>Email *</label><input type="email" id="cEmail" name="cEmail" required><span class="error" id="cEmailError"></span>
+<label>Message Type *</label><select id="msgType" name="msgType" required><option value="">Select</option><option value="general">General Enquiry</option><option value="support">Support</option><option value="feedback">Feedback</option><option value="business">Business Opportunity</option></select><span class="error" id="msgTypeError"></span>
+<label>Full Message *</label><textarea id="cMessage" name="cMessage" required minlength="15" rows="5"></textarea><span class="error" id="cMessageError"></span>
+<button type="submit" class="button">Send Email</button>
+<p id="contactFormMessage"></p>
+</form>
+</div>
+</section>
+<footer><p>&copy; 2026 UrbanGear</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js_assets/script.js" defer></script>
+</body>
+</html>
